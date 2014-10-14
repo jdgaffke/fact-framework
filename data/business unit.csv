@@ -1,0 +1,20 @@
+Name,Parent Business
+ChannelSalesAndMarketing,AdventureWorksCycle
+Service,AdventureWorksCycle
+CustomerCare,AdventureWorksCycle
+OEM,ChannelSalesAndMarketing
+NationalAccounts,ChannelSalesAndMarketing
+ChannelFieldSales,ChannelSalesAndMarketing
+ChannelMarketing,ChannelSalesAndMarketing
+EasternRegion,ChannelFieldSales
+CentralRegion,ChannelFieldSales
+WesternRegion,ChannelFieldSales
+NationalChannelMarketing,ChannelMarketing
+RetailChannelMarketing,ChannelMarketing
+BicycleParts,RetailChannelMarketing
+Bicycles,RetailChannelMarketing
+WesternRegion,Service
+CentralRegion,Service
+EasternRegion,Service
+CustomerSupport,CustomerCare
+OEMSupport,CustomerCare
