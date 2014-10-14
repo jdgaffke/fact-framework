@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <operator 
     name="entitySearch"
-    rowset="entitySearch"
     created="20141001"
     deprecated=""
     retired=""
@@ -25,7 +24,7 @@
     <literal name="all" type="String" required="true" />
     </input>        
         
-    <output>
+    <output rowset="entitySearch">
     <field name="entityId" type="EntityId" />
     </output>        
     

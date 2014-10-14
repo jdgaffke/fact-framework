@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <operator 
     name="entityName"
-    rowset="entityName"
     created="20141001"
     deprecated=""
     retired=""
