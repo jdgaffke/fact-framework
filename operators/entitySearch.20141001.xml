@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operator 
+    name="entitySearch"
+    rowset="entitySearch"
+    created="20141001"
+    deprecated=""
+    retired=""
+    implementation="entitySearch.20141001.js"
+    >
+
+    <comment> 
+    Performs a freeform text search on the designated field, returning a nested
+    rowset of entity IDs.
+    </comment>        
+    
+    <example> 
+    <query v="20141001">
+        <entitySearch all="your search terms">
+            <entityName/>
+        </entitySearch>
+    </query>
+    </example>        
+    
+    <input> 
+    <literal name="all" type="String" required="true" />
+    </input>        
+        
+    <output>
+    <field name="entityId" type="EntityId" />
+    </output>        
+    
+</operator>
