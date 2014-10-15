@@ -5,7 +5,14 @@ Query Engine API
 
 POST /engine/run
 
-Run a query.  Requires XML request body. 
+Requires XML request body.  Execute the query.
+
+--------------------------------------------------
+
+POST /engine/run/schema
+
+Requires XML request body.  Returns the XML schema
+that would be returned by the query when executed.
 
 --------------------------------------------------
 GET /engine/perf
