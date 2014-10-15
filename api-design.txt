@@ -3,18 +3,25 @@
 Query Engine API
 ==================================================
 
-POST /run
+POST /engine/run
+
 Run a query.  Requires XML request body. 
 
 --------------------------------------------------
+GET /engine/perf
 
-GET /op/[name]/[as-of]/perf
+Return engine performance statistics.
+Statistics are maintained in-memory and therefore
+only apply to the target server since last restart.
 
-[name] Full operator name. (required)
+--------------------------------------------------
+GET /engine/perf?[op]&[as-of]
+
+[op] Full operator name. (required)
 [as-of] YYYYMMDD version datestamp (defaults to today)
 
 Return operator performance statistics from query engine.
-Statistics are maintained in-memory only, and therefore
+Statistics are maintained in-memory and therefore
 only apply to the target server since last restart.
 
 
@@ -31,7 +38,6 @@ Search all operator metadata, returning matching
 operator descriptors.
 
 --------------------------------------------------
-
 GET /op/[name]/[as-of]
 
 [name] Full operator name. (required)
