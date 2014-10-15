@@ -1,0 +1,42 @@
+
+==================================================
+Query Engine API
+==================================================
+
+POST /run
+Run a query.  Requires XML request body. 
+
+--------------------------------------------------
+
+GET /op/[name]/[as-of]/perf
+
+[name] Full operator name. (required)
+[as-of] YYYYMMDD version datestamp (defaults to today)
+
+Return operator performance statistics from query engine.
+Statistics are maintained in-memory only, and therefore
+only apply to the target server since last restart.
+
+
+==================================================
+Operator Metadata API
+==================================================
+
+GET /op?[find]&[fields]
+
+[find] search string (required)
+[fields] comma separated list of fields to search (defaults to all)
+
+Search all operator metadata, returning matching
+operator descriptors.
+
+--------------------------------------------------
+
+GET /op/[name]/[as-of]
+
+[name] Full operator name. (required)
+[as-of] YYYYMMDD version datestamp (defaults to today)
+
+Return metadata for a specific operator.
+
+--------------------------------------------------
