@@ -1,15 +1,13 @@
-//
+var express = require('express'),
+    app = express();
 
-var http = require('http');
-var path = require('path');
-var express = require('express');
+// Documentation
+app.get("/", express.static("./static"));
 
-var router = express();
-var server = http.createServer(router);
+// Query engine API
+app.use("/engine", require('./engine-router.js').router);
 
-router.use(express.static("static"));
+// Metadata API 
+app.use("/meta", require('./metadata-router.js').router);
 
-server.listen(process.env.PORT || 80, process.env.IP || "0.0.0.0", function() {
-  var addr = server.address();
-  console.log("HTTP server listening at ", addr.address + ":" + addr.port);
-});
+app.listen(8080);
