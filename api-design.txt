@@ -3,7 +3,7 @@
 Query Engine API
 ==================================================
 
-POST /engine/run
+POST /engine/query?[trace]&[schema]
 
 Requires XML request body.  Execute the query.
 
