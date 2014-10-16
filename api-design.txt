@@ -9,12 +9,13 @@ Requires XML request body.  Execute the query.
 
 --------------------------------------------------
 
-POST /engine/run/schema
+POST /engine/schema
 
 Requires XML request body.  Returns the XML schema
 that would be returned by the query when executed.
 
 --------------------------------------------------
+
 GET /engine/perf
 
 Return engine performance statistics.
@@ -22,6 +23,7 @@ Statistics are maintained in-memory and therefore
 only apply to the target server since last restart.
 
 --------------------------------------------------
+
 GET /engine/perf?[op]&[as-of]
 
 [op] Full operator name. (required)
@@ -30,7 +32,6 @@ GET /engine/perf?[op]&[as-of]
 Return operator performance statistics from query engine.
 Statistics are maintained in-memory and therefore
 only apply to the target server since last restart.
-
 
 ==================================================
 Operator Metadata API
@@ -45,6 +46,7 @@ Search all operator metadata, returning matching
 operator descriptors.
 
 --------------------------------------------------
+
 GET /op/[name]/[as-of]
 
 [name] Full operator name. (required)
