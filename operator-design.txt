@@ -1,0 +1,18 @@
+- Operators are either:
+(1) Field Creator: Outputs fields on the current row.
+(2) Row Creator: Creates a nested rowset, outputing zero or more rows, and fields
+on those rows.
+
+- Row creators are indicated by the rowset="name" attribute on the <produces>
+element.
+
+- Input arguments can be either references to fields in the enclosing scope, or 
+constant literals.  Constants must be prefixed with the "c:" or "const:" namespace.
+
+- If operator input is not required and has no default, the special EMPTY argument 
+will be passed at runtime.
+
+- The special <field> operator creates a field from a constant literal.
+
+- The special <rowset> operator creates a new nested rowset containing a single row.
+

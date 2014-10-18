@@ -4,7 +4,7 @@
     created="20141001"
     deprecated=""
     retired=""
-    implementation="entity-name.20141001.js"
+    implementation="entityName.20141001.js"
     >
 
     <comment> 
@@ -14,19 +14,19 @@
     </comment>        
     
     <example> 
-    <query v="20141001">
-        <entity-search all="your search terms">
-            <entity-name/>
-        </entity-search>
-    </query>
+        <query v="20141001">
+            <entitySearch all="your search terms">
+                <entityName/>
+            </entitySearch>
+        </query>
     </example>        
     
-    <input> 
-    <field name="entityId" type="EntityId" required="true" />
-    </input>        
+    <consumes> 
+        <input name="entityId" type="EntityId">
+    </consumes>        
         
-    <output>
-    <field name="entityName" type="String" />
-    </output>        
+    <produces>
+        <output name="entityName" type="String" />
+    </produces>        
     
 </operator>

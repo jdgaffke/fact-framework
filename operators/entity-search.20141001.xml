@@ -7,25 +7,25 @@
     implementation="entitySearch.20141001.js"
     >
 
-    <comment> 
-    Performs a freeform text search on the designated field, returning a nested
+    <note> 
+    Performs a freeform text search on the designated fields, returning a nested
     rowset of entity IDs.
-    </comment>        
+    </note>        
     
     <example> 
-    <query v="20141001">
-        <entitySearch all="your search terms">
-            <entityName/>
-        </entitySearch>
-    </query>
+        <query v="20141001">
+            <entitySearch c:all="your search terms">
+                <entityName/>
+            </entitySearch>
+        </query>
     </example>        
     
-    <input> 
-    <literal name="all" type="String" required="true" />
-    </input>        
+    <consumes>
+        <input name="all" type="String" note="Searches all fields."/>
+    </consumes>        
         
-    <output rowset="entitySearch">
-    <field name="entityId" type="EntityId" />
-    </output>        
+    <produces rowset="entitySearch">
+        <output name="entityId" type="EntityId" note=""/>
+    </produces>        
     
 </operator>
