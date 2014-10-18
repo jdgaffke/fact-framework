@@ -22,6 +22,7 @@
     </input>        
         
     <output>
+        <field name="accountFound" type="Boolean" />
         <field name="owner" type="String" />
         <field name="status" type="String" />
         <field name="category" type="String" />

@@ -1,4 +1,6 @@
-debugger;
+/***********************************************************
+ * Query engine API.
+ **********************************************************/
 
 var express = require('express');
 var router = exports.router = express.Router({

@@ -8,6 +8,6 @@ app.get("/", express.static("./static"));
 app.use("/engine", require('./engine-router.js').router);
 
 // Metadata API 
-app.use("/meta", require('./metadata-router.js').router);
+app.use("/op", require('./metadata-router.js').router);
 
 app.listen(8080);

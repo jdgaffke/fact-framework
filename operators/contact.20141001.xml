@@ -22,7 +22,7 @@
     </input>        
         
     <output>
-        <field name="contactId" type="Integer">
+        <field name="contactFound" type="Boolean">
         <field name="fullName" type="String" />
         <field name="businessPhone" type="String" />
         <field name="emailAddress" type="String" />
