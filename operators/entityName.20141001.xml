@@ -7,11 +7,11 @@
     implementation="entityName.20141001.js"
     >
 
-    <comment> 
+    <note> 
     Returns a single field containing the entity common name.
     For organizations, this is the org name.
     For contacts, this is a concatenation of first, middle init, last.
-    </comment>        
+    </note>        
     
     <example> 
         <query v="20141001">
@@ -21,12 +21,12 @@
         </query>
     </example>        
     
-    <consumes> 
-        <input name="entityId" type="EntityId">
-    </consumes>        
+    <input> 
+        <field name="entityId" type="EntityId">
+    </input>        
         
-    <produces>
-        <output name="entityName" type="String" />
-    </produces>        
+    <output>
+        <field name="entityName" type="String" />
+    </output>        
     
 </operator>

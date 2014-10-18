@@ -12,7 +12,7 @@ constant literals.  Constants must be prefixed with the "c:" or "const:" namespa
 - If operator input is not required and has no default, the special EMPTY argument 
 will be passed at runtime.
 
-- The special <field> operator creates a field from a constant literal.
+- The built-in <field> operator creates a field from a constant literal.
 
-- The special <rowset> operator creates a new nested rowset containing a single row.
+- The built-in <rowset> operator creates a new nested rowset containing a single row.
 

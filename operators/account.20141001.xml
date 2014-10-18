@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operator 
+    name="account"
+    created="20141001"
+    deprecated=""
+    retired=""
+    implementation="account.20141001.js"
+    >
+
+    <note> 
+    Returns core account information.
+    </note>        
+    
+    <example note="Look up a known account."> 
+        <query>
+            <account const:accountId="1234"/>
+        </query>
+    </example>        
+    
+    <input> 
+        <field name="accountId" type="Integer">
+    </input>        
+        
+    <output>
+        <field name="owner" type="String" />
+        <field name="status" type="String" />
+        <field name="category" type="String" />
+        <field name="primaryContact" type="String" />
+        <field name="mainPhone" type="String" />
+    </output>        
+    
+</operator>

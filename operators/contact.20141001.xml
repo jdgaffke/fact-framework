@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operator 
+    name="contact"
+    created="20141001"
+    deprecated=""
+    retired=""
+    implementation="contact.20141001.js"
+    >
+
+    <note> 
+    Returns core contact information.
+    </note>        
+    
+    <example note="Look up a known contact."> 
+        <query>
+            <contact const:contactId="1234"/>
+        </query>
+    </example>        
+    
+    <input> 
+        <field name="contactId" type="Integer">
+    </input>        
+        
+    <output>
+        <field name="contactId" type="Integer">
+        <field name="fullName" type="String" />
+        <field name="businessPhone" type="String" />
+        <field name="emailAddress" type="String" />
+        <field name="gender" type="String" />
+        <field name="jobTitle" type="String" />
+        <field name="status" type="String" />
+    </output>        
+    
+</operator>

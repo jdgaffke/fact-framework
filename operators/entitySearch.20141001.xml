@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <operator 
-    name="entitySearch"
+    name="contactSearch"
     created="20141001"
     deprecated=""
     retired=""
-    implementation="entitySearch.20141001.js"
+    implementation="contactSearch.20141001.js"
     >
 
     <note> 
-    Performs a freeform text search on the designated fields, returning a nested
-    rowset of entity IDs.
+    Performs a text search on the designated fields, returning a nested
+    rowset of contact IDs.
     </note>        
     
     <example> 
-        <query v="20141001">
-            <entitySearch c:all="your search terms">
-                <entityName/>
-            </entitySearch>
+        <query>
+            <contactSearch c:fullName="joe">
+                <contact />
+            </contactSearch>
         </query>
     </example>        
     
-    <consumes>
-        <input name="all" type="String" note="Searches all fields."/>
-    </consumes>        
+    <input>
+        <field name="fullName" type="String" note="Searches name fields."/>
+    </input>        
         
-    <produces rowset="entitySearch">
-        <output name="entityId" type="EntityId" note=""/>
-    </produces>        
+    <output rowset="contactSearch">
+        <field name="contactId" type="ContactId" note=""/>
+    </output>        
     
 </operator>
