@@ -8,7 +8,7 @@ var find = require('find'),
 
 // Configuration
 var filePath = __dirname + "/operators/meta";
-var fileRegex = /(\w+)\.(\d{8})\.xml/i;
+var fileRegex = /([\w\.]+)\.(\d{8})\.xml/i;
 
 // Exported API object.
 var api = exports.api = {};
