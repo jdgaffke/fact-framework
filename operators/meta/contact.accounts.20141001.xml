@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<operator name="contactAccount" created="20141001" deprecated="" retired="" implementation="contactAccount.20141001.js">
+<operator name="contact.accounts" created="20141001" deprecated="" retired="" implementation="contact.accounts.20141001.js">
 
     <note>
         Given a contact ID, returns a nested rowset of account IDs.
@@ -7,9 +7,9 @@
 
     <example note="Return nested rowset of accounts for a contact.">
         <query v="20141001">
-            <contactAccount c:contactId="1234">
-                <account/>
-            </contactAccount>
+            <contact.accounts c:contactId="1234">
+                <account />
+            </contact.accounts>
         </query>
     </example>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<operator name="contactSearch" created="20141001" deprecated="" retired="" implementation="contactSearch.20141001.js">
+<operator name="contact.search" created="20141001" deprecated="" retired="" implementation="contact.search.20141001.js">
 
     <note>
         Performs a text search on the designated fields, returning a nested rowset of contact IDs.
@@ -7,9 +7,9 @@
 
     <example>
         <query v="20141001">
-            <contactSearch c:fullName="joe">
+            <contact.search c:fullName="joe">
                 <contact />
-            </contactSearch>
+            </contact.search>
         </query>
     </example>
 
@@ -17,7 +17,7 @@
     <field name="fullName" type="String" note="Searches name fields." />
     </input>
 
-    <output rowset="contactSearch">
+    <output rowset="contact.search">
         <field name="contactId" type="ContactId" note="" />
     </output>
 

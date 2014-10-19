@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<macro name="clientHierarchy" created="20141001" deprecated="" retired="">
+<macro name="client.hierarchy" created="20141001" deprecated="" retired="">
 
     <note>
         Returns account hierarchy for a contact.
@@ -7,14 +7,14 @@
 
     <example note="Account hierarchy for a known contact.">
         <query v="20141001">
-            <clientHierarchy c:contactId="1234" />
+            <client.hierarchy c:contactId="1234" />
         </query>
     </example>
 
     <expansion>
-        <contactAccount v="20141001">
+        <contact.account v="20141001">
             <account />
-        </contactAccount>
+        </contact.account>
     </expansion>
 
 </macro>

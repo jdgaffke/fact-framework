@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<operator name="entityName" created="20141001" deprecated="" retired="" implementation="entityName.20141001.js">
+<operator name="entity.name" created="20141001" deprecated="" retired="" implementation="entity.name.20141001.js">
 
-    <note>Returns a single field containing the entity common name. For organizations, this is the org name. For contacts, this is a concatenation of first, middle init, last.</note>
+    <note>
+        Returns a single field containing the entity common name. For organizations, this is the org name. For contacts, this is a concatenation of first, middle init, last.
+    </note>
 
     <example>
         <query v="20141001">
-            <entitySearch all="your search terms">
-                <entityName/>
-            </entitySearch>
+            <entity.search all="your search terms">
+                <entity.name/>
+            </entity.search>
         </query>
     </example>
 
@@ -16,7 +18,7 @@
     </input>
 
     <output>
-        <field name="entityName" type="String" />
+        <field name="entity.name" type="String" />
     </output>
 
 </operator>
