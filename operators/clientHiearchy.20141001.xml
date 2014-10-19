@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<macro name="clientHierarchy" created="20141001" deprecated="" retired="">
+
+    <note>
+        Returns account hierarchy for a contact.
+    </note>
+
+    <example note="Account hierarchy for a known contact.">
+        <query v="20141001">
+            <clientHierarchy c:contactId="1234" />
+        </query>
+    </example>
+
+    <expansion>
+        <contactAccount>
+            <account />
+        </contactAccount>
+    </expansion>
+
+</macro>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<operator name="contactAccount" created="20141001" deprecated="" retired="" implementation="contactAccount.20141001.js">
+
+    <note>
+        Given a contact ID, returns a nested rowset of account IDs.
+    </note>
+
+    <example note="Return nested rowset of accounts for a contact.">
+        <query v="20141001">
+            <contactAccount c:contactId="1234">
+                <account/>
+            </contactAccount>
+        </query>
+    </example>
+
+    <input>
+    <field name="contactId" type="Integer" />
+    </input>
+
+    <output rowset="accounts" rows="account">
+        <field name="accountId" type="Integer" />
+    </output>
+
+</operator>

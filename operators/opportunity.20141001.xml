@@ -1,26 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<operator 
-    name="opportunity"
-    created="20141001"
-    deprecated=""
-    retired=""
-    implementation="opportunity.20141001.js"
-    >
+<?xml version="1.0" encoding="UTF-8" ?>
+<operator name="opportunity" created="20141001" deprecated="" retired="" implementation="opportunity.20141001.js">
 
-    <note> 
-    Returns core opportunity information.
-    </note>        
-    
-    <example note="Look up a known opportunity."> 
-        <query>
-            <opportunity const:opportunityId="1234"/>
+    <note>
+        Returns core opportunity information.
+    </note>
+
+    <example note="Look up a known opportunity.">
+        <query v="20141001">
+            <opportunity const:opportunityId="1234" />
         </query>
-    </example>        
-    
-    <input> 
-        <field name="opportunityId" type="Integer"/>
-    </input>        
-        
+    </example>
+
+    <input>
+    <field name="opportunityId" type="Integer" />
+    </input>
+
     <output>
         <field name="opportunityId" type="String" />
         <field name="topic" type="String" />
@@ -28,6 +22,6 @@
         <field name="owner" type="String" />
         <field name="probability" type="Integer" />
         <field name="rating" type="String" />
-    </output>        
-    
+    </output>
+
 </operator>

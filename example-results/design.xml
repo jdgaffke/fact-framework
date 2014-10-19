@@ -1,0 +1,17 @@
+<response>
+    <query>
+    <!-- Status block contains error, info, trace, perf info. -->
+    <status code="OK"></status>
+    <!-- [result] is the single row created by the [query] operator -->
+    <result>
+        <clientHierarchy>
+            <client contactId="" firstName="" middleName="" lastName="">
+                <accountList>
+                    <account accountId="" description="" status="" owner="" />
+                </accountList>
+            </client>
+        </clientHierarchy>
+    </result>
+    </query>
+    <!-- May repeat, if multiple [query] operator were executed. -->
+</response>

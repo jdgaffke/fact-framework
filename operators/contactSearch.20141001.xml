@@ -1,31 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<operator 
-    name="contactSearch"
-    created="20141001"
-    deprecated=""
-    retired=""
-    implementation="contactSearch.20141001.js"
-    >
+<?xml version="1.0" encoding="UTF-8" ?>
+<operator name="contactSearch" created="20141001" deprecated="" retired="" implementation="contactSearch.20141001.js">
 
-    <note> 
-    Performs a text search on the designated fields, returning a nested
-    rowset of contact IDs.
-    </note>        
-    
-    <example> 
-        <query>
+    <note>
+        Performs a text search on the designated fields, returning a nested rowset of contact IDs.
+    </note>
+
+    <example>
+        <query v="20141001">
             <contactSearch c:fullName="joe">
                 <contact />
             </contactSearch>
         </query>
-    </example>        
-    
+    </example>
+
     <input>
-        <field name="fullName" type="String" note="Searches name fields."/>
-    </input>        
-        
+    <field name="fullName" type="String" note="Searches name fields." />
+    </input>
+
     <output rowset="contactSearch">
-        <field name="contactId" type="ContactId" note=""/>
-    </output>        
-    
+        <field name="contactId" type="ContactId" note="" />
+    </output>
+
 </operator>
