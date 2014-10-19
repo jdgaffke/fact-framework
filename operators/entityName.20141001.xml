@@ -22,7 +22,7 @@
     </example>        
     
     <input> 
-        <field name="entityId" type="EntityId">
+        <field name="entityId" type="EntityId"/>
     </input>        
         
     <output>

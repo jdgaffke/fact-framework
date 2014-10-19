@@ -1,0 +1,15 @@
+{
+  "name": "fact-query-engine",
+  "version": "0.0.1",
+  "description": "Query engine utilizing XML as input/output format.",
+  "main": "server.js",
+  "repository": "",
+  "author": "jdgaffke;bwells",
+  "dependencies": {
+    "express": "~4.9.8",
+    "async": "~0.2.8",
+    "socket.io": "~0.9.14",
+    "xml2js": "~0.4.4",
+    "find": "~0.1.7"
+  }
+}

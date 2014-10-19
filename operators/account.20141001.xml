@@ -13,12 +13,12 @@
     
     <example note="Look up a known account."> 
         <query>
-            <account const:accountId="1234"/>
+            <account c:accountId="1234"/>
         </query>
     </example>        
     
     <input> 
-        <field name="accountId" type="Integer">
+        <field name="accountId" type="Integer"/>
     </input>        
         
     <output>

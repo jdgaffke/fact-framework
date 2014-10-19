@@ -18,7 +18,7 @@
     </example>        
     
     <input> 
-        <field name="opportunityId" type="Integer">
+        <field name="opportunityId" type="Integer"/>
     </input>        
         
     <output>

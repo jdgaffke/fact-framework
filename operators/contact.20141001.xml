@@ -13,16 +13,16 @@
     
     <example note="Look up a known contact."> 
         <query>
-            <contact const:contactId="1234"/>
+            <contact c:contactId="1234"/>
         </query>
     </example>        
     
     <input> 
-        <field name="contactId" type="Integer">
+        <field name="contactId" type="Integer"/>
     </input>        
         
     <output>
-        <field name="contactFound" type="Boolean">
+        <field name="contactFound" type="Boolean" />
         <field name="fullName" type="String" />
         <field name="businessPhone" type="String" />
         <field name="emailAddress" type="String" />
