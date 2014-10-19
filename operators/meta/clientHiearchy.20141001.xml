@@ -12,7 +12,7 @@
     </example>
 
     <expansion>
-        <contactAccount>
+        <contactAccount v="20141001">
             <account />
         </contactAccount>
     </expansion>

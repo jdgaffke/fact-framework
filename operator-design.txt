@@ -4,7 +4,8 @@
 on those rows.
 
 - Row creators are indicated by the rowset="name" attribute on the <produces>
-element.
+element. An optional row="name" attribute indicates the XML elements contained
+within the rowset.  If row="name" is not provided, <row> is used.
 
 - Input arguments can be either references to fields in the enclosing scope, or 
 constant literals.  Constants must be prefixed with the "c:" or "const:" namespace.
@@ -15,4 +16,15 @@ will be passed at runtime.
 - The built-in <field> operator creates a field from a constant literal.
 
 - The built-in <rowset> operator creates a new nested rowset containing a single row.
+
+- Special XML namespace prefixes: 
+[q: or query:] indicates part of the query language, to disambiguate cases where
+a name in the query language collides with a name in the business domain.  
+Examples: 
+q:version (q:v) - indicates operator version, inherited down.
+q:rowset - indicates nested rowset name.
+
+[c: or const:] indicates a literal argument. This is just a shorthand for using 
+the <field> builtin.
+
 
