@@ -7,7 +7,7 @@ var find = require('find'),
     xml2js = require('xml2js');
 
 // Configuration
-var filePath = __dirname + "/operators";
+var filePath = __dirname + "/operators/meta";
 var fileRegex = /(\w+)\.(\d{8})\.xml/i;
 
 // Exported API object.
