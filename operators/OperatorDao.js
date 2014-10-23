@@ -4,19 +4,22 @@
 
 var find = require('find'),
     fs = require('fs'),
-    xml2js = require('xml2js');
+    xml2js = require('xml2js'),
+    dom = require('xmldom').DOMParser,
+    xpath= require('xpath')
+    ;
 
 // Configuration
-var filePath = __dirname + "/operators/meta";
-var fileRegex = /([\w\.]+)\.(\d{8})\.xml/i;
+var metaPath = __dirname + "/operators/meta";
+var metaFileRegex = /([\w\.]+)\.(\d{8})\.xml/i;
 
-// Exported API object.
-var api = exports.api = {};
+// Exported API.
+var dao = exports.dao = {};
 
 /**
  * Reload metadata from disk, creating in-memory index.
  */
-api.createIndex = function() {
+dao.createIndex = function() {
     throw "Unimplemented";
 };
 
@@ -27,9 +30,9 @@ api.createIndex = function() {
  * @param version Operator version. Will match the nearest preceeding version.
  * @param callback function(err, obj) where [obj] is the in-memory meta object.
  */
-api.getOperatorMetadata = function(name, version, callback) {
+dao.getOperatorMetadata = function(name, version, callback) {
     var nameFilter = new RegExp("^" + name + ".\\d{8}.xml");
-    find.file(nameFilter, filePath, function(files) {
+    find.file(nameFilter, metaPath, function(files) {
         if (files && files.length > 0) {
             var fullPath = files[0];
             var parser = new xml2js.Parser();
