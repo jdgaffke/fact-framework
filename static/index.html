@@ -3,17 +3,21 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     </head>
     <body>
-        <h1> SOA Composition Service (SCS) </h1>
+        <h1> Data Composition Service (DCS) </h1>
         <h3> What is it? </h3>
         <ul>
-            <li>An service for executing data operators, where operators 
-                are either local (in-process) or remote (out-of-process, 
-                over the network) services.</li>
+            <li>A service for executing a tree of data operators, where:<br/>
+                (a) Operators are either local (in-process) or remote (out-of-process, 
+                over the network) services.<br/>
+                (b) The tree is a dependency tree, where the output of preceding 
+                operators can be used as the input of following/descendant operators.
+            </li>
             <li>Usage: 
             <ol>
                 <li>A service client submits a query in XML format. 
-                    The query describes the operators to invoke, and how the 
-                    output of one operator feeds into the input of the next.</li>
+                    The XML query describes the operators to invoke, and how the
+                    output of one operator feeds into the input of the next 
+                    (dependency tree).</li>
                 <li>The Composition Service executes the operators in the optimal
                     sequence, formatting the results into a XML document.</li>
             </ol>
