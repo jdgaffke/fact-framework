@@ -1,7 +1,45 @@
 <html>
     <head>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     </head>
     <body>
-        Fact Query Engine
+        <h1> SOA Composition Service (SCS) </h1>
+        <h3> What is it? </h3>
+        <ul>
+            <li>An service for executing data operators, where operators 
+                are either local (in-process) or remote (out-of-process, 
+                over the network) services.</li>
+            <li>Usage: 
+            <ol>
+                <li>A service client submits a query in XML format. 
+                    The query describes the operators to invoke, and how the 
+                    output of one operator feeds into the input of the next.</li>
+                <li>The Composition Service executes the operators in the optimal
+                    sequence, formatting the results into a XML document.</li>
+            </ol>
+            </li>
+        </ul>
+        <h3> Benefits to SOA clients: </h3>
+        <ul>
+            <li>Provides a more declarative SOA approach.</li>
+            <li>Frees SOA clients from concerns of orchestrating multiple service 
+                calls, stitching together results, parallelization, etc.</li>
+            <li>Simplified data exchange: XML query input, XML recordset output.
+                XML allows XSD-based tools.</li>
+            <li>Operator metadata is self-documenting, always in sync, supports 
+                searchable documentation</li>
+            <li>Browser-based REPL simplifies development</li>
+        </ul>
+        <h3> Benefits to SOA developers: </h3>
+        <ul>
+            <li>Service developers focus on implementing data operators only.
+                Execution engine handles operator orchestration including 
+                sequencing, parallelization, data caching, etc.</li>    
+            <li>Metadata-driven access to execution engine services,
+                such as automatic data caching, data security, provisioning.</li>
+            <li>Handles versioning, deprecations, retirement of operators</li>
+            <li>Less concern about API boundaries = faster development</li>
+            <li>Execution plan tracing, statistics, resource governance.</li>
+        </u1>
     </body>
 </html>
